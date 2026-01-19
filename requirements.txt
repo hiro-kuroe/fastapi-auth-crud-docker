@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-jose[cryptography]
+python-multipart
+passlib
+sqlalchemy==2.0.38
+python-dotenv

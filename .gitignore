@@ -1,0 +1,12 @@
+# env
+.env
+
+# database
+app.db
+
+# python
+__pycache__/
+*.pyc
+
+# local
+*.log
