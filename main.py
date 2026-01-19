@@ -34,7 +34,6 @@ def create_user(
     password: str,
     db: Session = Depends(get_db),
 ):
-    # すでに同じ username がいないか確認
     existing_user = db.query(User).filter(User.username == username).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Username already registered")
