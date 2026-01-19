@@ -28,6 +28,8 @@ Docker環境でそのまま起動できます。
 
 ### 1. 環境変数ファイルを用意
 
+初回のみ、`.env.sample` をコピーして `.env` を作成します。
+
 ```bash
 # Windows (PowerShell)
 copy .env.sample .env
