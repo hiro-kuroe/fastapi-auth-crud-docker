@@ -26,4 +26,19 @@ Docker環境でそのまま起動できます。
 
 ## 起動方法（Docker）
 
+### 1. 環境変数ファイルを用意
+
+```bash
+# Windows (PowerShell)
+copy .env.sample .env
+
+# macOS / Linux
+cp .env.sample .env
+
+docker build -t fastapi-auth-crud .
+docker run -p 8000:8000 --env-file .env fastapi-auth-crud
+bash
+
+http://localhost:8000/docs
+
 ## 注意点
