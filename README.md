@@ -41,7 +41,7 @@ Swagger UI（/docs）上でトークンを発行し、
 
 2. Dockerイメージをビルドして起動します
 
-    docker build -t fastapi-auth-crud .
+    docker build -t fastapi-auth-crud .  
     docker run -p 8000:8000 --env-file .env fastapi-auth-crud
 
 3. 起動後、Swagger UIにアクセスします
