@@ -8,6 +8,8 @@ Dockerで起動し、Swaggerとcurlで動作確認できます。
 
 ## 概要
 既存業務システムを想定した、JWT認証付きFastAPIのサンプル構成です。
+Swagger UI（/docs）上でトークンを発行し、認証付きエンドポイント（/me）の動作を確認できます。
+
 
 ## 主な機能
 - JWT認証（/token, /me）
