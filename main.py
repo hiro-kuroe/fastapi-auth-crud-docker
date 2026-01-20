@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from jose import JWTError, jwt
 import socket
 from db.base import Base
-from db.session import engine, get_db
+from db.session import engine, get_db, SessionLocal
 from crud.user import get_user_by_username
 from utils.security import verify_password, get_password_hash, get_current_user
 from db.models.user import User
@@ -25,32 +25,22 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
 
 app = FastAPI()
 
+@app.on_event("startup")
+def create_demo_user():
+    db = SessionLocal()
+    try:
+        demo_user = db.query(User).filter(User.username == "demo").first()
+        if not demo_user:
+            user = User(
+                username="demo",
+                hashed_password=get_password_hash("demo123"),
+            )
+            db.add(user)
+            db.commit()
+    finally:
+        db.close()
+
 Base.metadata.create_all(bind=engine)
-
-
-@app.post("/users")
-def create_user(
-    username: str,
-    password: str,
-    db: Session = Depends(get_db),
-):
-    existing_user = db.query(User).filter(User.username == username).first()
-    if existing_user:
-        raise HTTPException(status_code=400, detail="Username already registered")
-
-    hashed_password = get_password_hash(password)
-
-    user = User(
-        username=username,
-        hashed_password=hashed_password,
-    )
-
-    db.add(user)
-    db.commit()
-    db.refresh(user)
-
-    return {"id": user.id, "username": user.username}
-
 
 @app.post("/token")
 def login(
@@ -73,11 +63,3 @@ def login(
 @app.get("/me")
 def read_me(current_user: str = Depends(get_current_user)):
     return {"username": current_user}
-
-
-@app.get("/protected")
-def protected(current_user: str = Depends(get_current_user)):
-    return {
-        "message": "認証OK",
-        "user": current_user,
-    }
