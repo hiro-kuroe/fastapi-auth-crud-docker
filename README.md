@@ -1,3 +1,7 @@
+Zenn記事：
+FastAPI × JWT事故メモ── /tokenは通るのに /me が401になる理由
+
+
 ## このリポジトリについて
 
 このリポジトリは、FastAPI + JWT + Docker 環境で
