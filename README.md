@@ -1,5 +1,7 @@
 Zenn記事：
 FastAPI × JWT事故メモ── /tokenは通るのに /me が401になる理由
+https://zenn.dev/fastapier/articles/0022f125547300
+
 
 
 ## このリポジトリについて
