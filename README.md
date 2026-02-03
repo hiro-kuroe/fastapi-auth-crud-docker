@@ -67,6 +67,10 @@ Swagger UI（/docs）上でトークンを発行し、
   実案件で最も多い事故パターンの一つです。  
   詳細は `jwt_troubleshooting.md` を参照
 
+- 初動切り分け用チェックリスト  
+  詳細は `CHECKLIST.md` を参照
+
+
 
 
 ## 起動方法（Docker）
