@@ -107,15 +107,17 @@ cp .env.sample .env
 docker build -t fastapi-auth-crud .
 docker run -p 8000:8000 --env-file .env fastapi-auth-crud
 ```
-### 3. Swagger UI にアクセスします
-ブラウザで以下のURLを開いてください。
+## 3. Swagger UI にアクセスします
+ブラウザで以下の URL を開いてください。
+
 http://localhost:8000/docs
-デモユーザーについて
+
+## デモユーザーについて
 動作確認を簡単に行うため、起動時に以下のデモユーザーを自動作成します。
 
-username: demo
+- username: demo
+- password: demo123
 
-password: demo123
 
 このユーザーを使用して /token から JWT を発行し、
 /me エンドポイントの認証動作を確認できます。
