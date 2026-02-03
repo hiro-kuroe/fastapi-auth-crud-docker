@@ -95,24 +95,21 @@ Swagger UI（`/docs`）上でトークンを発行し、
 
 ### 1. 環境変数ファイルを作成します（初回のみ）
 
-**Windows (PowerShell)**
+#### Windows（PowerShell）
+
 ```powershell
 copy .env.sample .env
 macOS / Linux
-
-Bash
 cp .env.sample .env
-2. Dockerイメージをビルドして起動します
-Bash
-# ビルド
+```
+### 2. Dockerイメージをビルドして起動します
+```
 docker build -t fastapi-auth-crud .
-
-# 起動
 docker run -p 8000:8000 --env-file .env fastapi-auth-crud
-3. Swagger UI にアクセスします
+```
+### 3. Swagger UI にアクセスします
 ブラウザで以下のURLを開いてください。
 http://localhost:8000/docs
-
 デモユーザーについて
 動作確認を簡単に行うため、起動時に以下のデモユーザーを自動作成します。
 
@@ -121,7 +118,6 @@ username: demo
 password: demo123
 
 このユーザーを使用して /token から JWT を発行し、
-
 /me エンドポイントの認証動作を確認できます。
 
 ※ 実務ではこのような固定ユーザーは使用しません。
