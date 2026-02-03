@@ -79,8 +79,9 @@ Swagger UI（`/docs`）上でトークンを発行し、
 
 ## JWT事故対応メモ
 
-- **SECRET_KEY 変更時に発生する 401 / 403 の挙動整理** 実案件で最も多い事故パターンの一つです。  
-  詳細は `jwt_troubleshooting.md` を参照してください。
+- **SECRET_KEY 変更時に発生する 401 / 403 の挙動整理** 
+実案件で最も多い事故パターンの一つです。  
+詳細は `jwt_troubleshooting.md` を参照してください。
 
 ---
 
@@ -99,7 +100,9 @@ Swagger UI（`/docs`）上でトークンを発行し、
 
 ```powershell
 copy .env.sample .env
-macOS / Linux
+```
+#### macOS / Linux
+```
 cp .env.sample .env
 ```
 ### 2. Dockerイメージをビルドして起動します
