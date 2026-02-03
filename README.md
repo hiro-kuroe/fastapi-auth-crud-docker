@@ -1,7 +1,7 @@
+Markdown
 ## Zenn記事（本リポジトリの背景・事故解説）
 
-**FastAPI × JWT事故メモ── /tokenは通るのに /me が401になる理由**  
-https://zenn.dev/fastapier/articles/0022f125547300
+**FastAPI × JWT事故メモ── /tokenは通るのに /me が401になる理由** [https://zenn.dev/fastapier/articles/0022f125547300](https://zenn.dev/fastapier/articles/0022f125547300)
 
 ---
 
@@ -79,8 +79,7 @@ Swagger UI（`/docs`）上でトークンを発行し、
 
 ## JWT事故対応メモ
 
-- **SECRET_KEY 変更時に発生する 401 / 403 の挙動整理**  
-  実案件で最も多い事故パターンの一つです。  
+- **SECRET_KEY 変更時に発生する 401 / 403 の挙動整理** 実案件で最も多い事故パターンの一つです。  
   詳細は `jwt_troubleshooting.md` を参照してください。
 
 ---
@@ -96,21 +95,25 @@ Swagger UI（`/docs`）上でトークンを発行し、
 
 ### 1. 環境変数ファイルを作成します（初回のみ）
 
-**Windows（PowerShell）**
-
+**Windows (PowerShell)**
 ```powershell
 copy .env.sample .env
-macOS / Linux```
+macOS / Linux
 
+Bash
 cp .env.sample .env
-###2. Dockerイメージをビルドして起動します
-```docker build -t fastapi-auth-crud .
-docker run -p 8000:8000 --env-file .env fastapi-auth-crud```
-###3. Swagger UI にアクセスします
-```http://localhost:8000/docs```
+2. Dockerイメージをビルドして起動します
+Bash
+# ビルド
+docker build -t fastapi-auth-crud .
 
-**デモユーザーについて**
+# 起動
+docker run -p 8000:8000 --env-file .env fastapi-auth-crud
+3. Swagger UI にアクセスします
+ブラウザで以下のURLを開いてください。
+http://localhost:8000/docs
 
+デモユーザーについて
 動作確認を簡単に行うため、起動時に以下のデモユーザーを自動作成します。
 
 username: demo
@@ -118,9 +121,7 @@ username: demo
 password: demo123
 
 このユーザーを使用して /token から JWT を発行し、
+
 /me エンドポイントの認証動作を確認できます。
 
 ※ 実務ではこのような固定ユーザーは使用しません。
-
-注意点
-.env の SECRET_KEY を変更すると、既存の JWT はすべて無効になります。
