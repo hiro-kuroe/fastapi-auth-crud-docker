@@ -1,4 +1,4 @@
-Markdown
+
 ## Zenn記事（本リポジトリの背景・事故解説）
 
 **FastAPI × JWT事故メモ── /tokenは通るのに /me が401になる理由** [https://zenn.dev/fastapier/articles/0022f125547300](https://zenn.dev/fastapier/articles/0022f125547300)
@@ -126,3 +126,27 @@ http://localhost:8000/docs
 /me エンドポイントの認証動作を確認できます。
 
 ※ 実務ではこのような固定ユーザーは使用しません。
+
+---
+
+## 📩 相談窓口（Incident Consultation）
+
+FastAPI / JWT / Docker まわりの認証トラブルを「原因の層」で切り分け、修正方針まで整理します。
+
+
+📩 ご相談方法
+GitHubプロフィールに記載のメールアドレスまでご連絡ください。
+https://github.com/hiro-kuroe
+
+メール本文に、以下3点だけご記載ください（短文でOKです）：
+
+① 症状
+（例：/me が 401 / 本番だけ署名エラー / Docker化後に認証失敗）
+
+② 環境
+（例：ローカルはOK、本番のみNG / Docker使用 / Gunicorn使用 など）
+
+③ 直前に変更した点
+（例：SECRET_KEY変更 / .env追加 / 依存パッケージ更新 など）
+
+※まずは分析フェーズ（原因特定と構造整理）から進めます。
