@@ -1,3 +1,7 @@
+📩 **FastAPI認証事故の相談はこちら →** [相談テンプレ（3項目だけ）を見る](docs/intake.md)
+
+---
+
 
 # FastAPI JWT Incident Playground
 
