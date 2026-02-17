@@ -117,7 +117,8 @@ FastAPI / JWT / Docker まわりの認証トラブルを「原因の層」で切
 
 📩 ご相談はこちら
 
-fastapienne@gmail.com
+[fastapienne@gmail.com](mailto:fastapienne@gmail.com?subject=FastAPI%20Incident%20Consultation)
+
 
 
 
