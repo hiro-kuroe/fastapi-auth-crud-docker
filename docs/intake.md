@@ -1,5 +1,15 @@
 ## 🩺 FastAPI事故 相談テンプレート（Intake Form）
 
+📩 ご相談方法
+
+本テンプレを記入の上、以下までお送りください。
+
+[fastapienne@gmail.com](mailto:fastapienne@gmail.com?subject=FastAPI%20Incident%20Consultation)
+
+または X DM：@fastapienne
+
+---
+
 FastAPI / JWT / Docker 周りの認証トラブルについて、  
 **本構成は「分析フェーズからの対応」を前提としています。**
 
