@@ -4,7 +4,7 @@
 
 本テンプレを記入の上、以下までお送りください。
 
-[** 📧fastapienne@gmail.com **](mailto:fastapienne@gmail.com?subject=FastAPI%20Incident%20Consultation)
+[📧fastapienne@gmail.com](mailto:fastapienne@gmail.com?subject=FastAPI%20Incident%20Consultation)
 
 または X DM：@fastapienne
 
