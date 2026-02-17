@@ -113,8 +113,6 @@ http://localhost:8000/docs
 FastAPI / JWT / Docker まわりの認証トラブルを「原因の層」で切り分け、修正方針まで整理します。
 
 
-ご相談は、GitHubプロフィール記載のメールアドレスまでご連絡ください。
-
 📩 ご相談はこちら
 
 [fastapienne@gmail.com](mailto:fastapienne@gmail.com?subject=FastAPI%20Incident%20Consultation)
