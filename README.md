@@ -115,8 +115,10 @@ FastAPI / JWT / Docker まわりの認証トラブルを「原因の層」で切
 
 ご相談は、GitHubプロフィール記載のメールアドレスまでご連絡ください。
 
-👉 GitHubプロフィール  
-https://github.com/hiro-kuroe
+📩 ご相談はこちら
+
+fastapienne@gmail.com
+
 
 
 メール本文に、以下3点のみご記載ください（短文でOK）：
