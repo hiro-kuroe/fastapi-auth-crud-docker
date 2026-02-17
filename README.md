@@ -113,9 +113,11 @@ http://localhost:8000/docs
 FastAPI / JWT / Docker まわりの認証トラブルを「原因の層」で切り分け、修正方針まで整理します。
 
 
-ご相談は、
-GitHubプロフィール記載のメールアドレス までご連絡ください。
+ご相談は、GitHubプロフィール記載のメールアドレスまでご連絡ください。
+
+👉 GitHubプロフィール  
 https://github.com/hiro-kuroe
+
 
 メール本文に、以下3点のみご記載ください（短文でOK）：
 
@@ -140,12 +142,13 @@ https://github.com/hiro-kuroe
 相談をご検討中の方は、以下をご確認ください。
 
 - 相談時の記載テンプレート  
-  → docs/intake.md
+  [docs/intake.md](docs/intake.md)
 
 - 分析 → 修正までの流れ  
-  → docs/menu.md
+  [docs/menu.md](docs/menu.md)
 
 - 分析レポートのサンプル構成  
-  → docs/report-sample.md
+  [docs/report-sample.md](docs/report-sample.md)
+
 
 事前に目を通していただくことで、やり取りがスムーズになります。
