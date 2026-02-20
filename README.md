@@ -1,3 +1,5 @@
+📩 **FastAPI authentication incident inquiry →**[Use the intake template (EN)](docs/intake-en.md)
+
 📩 **FastAPI認証事故の相談はこちら →** [相談テンプレ（症状・環境・変更点の記入だけ）を見る](docs/intake.md)
 
 
