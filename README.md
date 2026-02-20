@@ -14,9 +14,7 @@ I specialize in structural FastAPI/JWT authentication incidents:
 - Works locally but fails in **Docker**
 - **InvalidSignatureError** only in production
 
-Analysis-first approach.
-
-Root cause clarification before any modification.
+Analysis-first approach.  Root cause clarification before any modification.
 
 
 FastAPI + JWT + Docker で発生しやすい  
