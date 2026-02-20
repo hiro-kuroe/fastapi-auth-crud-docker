@@ -15,6 +15,7 @@ I specialize in structural FastAPI/JWT authentication incidents:
 - **InvalidSignatureError** only in production
 
 Analysis-first approach.
+
 Root cause clarification before any modification.
 
 
