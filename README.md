@@ -6,6 +6,10 @@
 
 # FastAPI JWT Incident Playground
 
+📖 **English Article (Dev.to)**  
+Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)  
+→ https://dev.to/fastapier/your-api-is-replying-but-authentication-is-already-broken-fastapi-jwt-333e
+
 🌐 **English support available**  
 💳 **Payment:** Wise (USD / ACH / SWIFT)
 
