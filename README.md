@@ -6,6 +6,17 @@
 
 # FastAPI JWT Incident Playground
 
+🌐 **English support available**  
+💳 **Payment:** Wise (USD / ACH / SWIFT)
+
+I specialize in structural FastAPI/JWT authentication incidents:
+- **/token works but /me returns 401/403**
+- Works locally but fails in **Docker**
+- **InvalidSignatureError** only in production
+
+**Analysis-first**: root cause clarification before any modification.
+
+
 FastAPI + JWT + Docker で発生しやすい  
 **認証トラブルの再現・切り分け用構成** です。
 
