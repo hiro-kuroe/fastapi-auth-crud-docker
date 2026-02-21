@@ -20,6 +20,7 @@ Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)
 <p align="center">
   <img src="./assets/swagger-demo.gif" width="500">
 </p>
+If your `/token` works but `/me` returns 401, this is the flow that should succeed.
 
 I specialize in structural FastAPI/JWT authentication incidents:
 - **/token works but /me returns 401/403**
