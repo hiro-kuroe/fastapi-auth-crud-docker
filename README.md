@@ -17,7 +17,9 @@ Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)
 
 ## 🔐 Live JWT Flow (Swagger)
 
-![JWT Demo](./assets/swagger-demo.gif)
+<p align="center">
+  <img src="./assets/swagger-demo.gif" width="600">
+</p>
 
 I specialize in structural FastAPI/JWT authentication incidents:
 - **/token works but /me returns 401/403**
