@@ -15,6 +15,10 @@ Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)
 🌐 **English support available**  
 💳 **Payment:** Wise (USD / ACH / SWIFT)
 
+## 🔐 Live JWT Flow (Swagger)
+
+![JWT Demo](./assets/swagger-demo.gif)
+
 I specialize in structural FastAPI/JWT authentication incidents:
 - **/token works but /me returns 401/403**
 - Works locally but fails in **Docker**
