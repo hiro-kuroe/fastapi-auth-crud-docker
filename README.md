@@ -20,16 +20,16 @@ Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)
 <p align="center">
   <img src="./assets/swagger-demo.gif" width="500">
 </p>
+
 If your `/token` works but `/me` returns 401, this is the flow that should succeed.
 
-I specialize in structural FastAPI/JWT authentication incidents:
-- **/token works but /me returns 401/403**
-- Works locally but fails in **Docker**
-- **InvalidSignatureError** only in production
+Structural FastAPI/JWT authentication incidents:
 
-Analysis-first approach.<br>
-Root cause clarification before any modification.
+- `/token` works but `/me` returns 401/403  
+- Works locally but fails in Docker  
+- `InvalidSignatureError` only in production  
 
+Analysis first. Root cause before patching.
 
 FastAPI + JWT + Docker で発生しやすい  
 **認証トラブルの再現・切り分け用構成** です。
