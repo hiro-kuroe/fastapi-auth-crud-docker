@@ -18,7 +18,7 @@ Your API Is Replying… But Authentication Is Already Broken (FastAPI JWT)
 ## 🔐 Live JWT Flow (Swagger)
 
 <p align="center">
-  <img src="./assets/swagger-demo.gif" width="600">
+  <img src="./assets/swagger-demo.gif" width="500">
 </p>
 
 I specialize in structural FastAPI/JWT authentication incidents:
